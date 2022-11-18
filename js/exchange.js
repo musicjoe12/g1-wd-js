@@ -37,10 +37,4 @@
             })
                     
     })
-    
-    document.getElementById('pounds').value;
-
-
-
-
 })()
