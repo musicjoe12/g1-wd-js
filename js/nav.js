@@ -1,7 +1,14 @@
 (function(){
-    console.dir(window)
-    let url = window.location.href
-    console.info(url)
-    let filename = url.split()
+    let listOfLinks = document.querySelectorAll("nav ul li")
+    console.dir(listOfLinks)
 
+    for (let i=0; i < listOfLinks.length; i++)
+    {
+        let currentLink = listOfLinks[i].querySelector("a").getAttribute("href")
+        console.info(currentLink)
+        if(currentLink === filename){
+            listOfLinks[i].setAttribute("class", "currentPage")
+            break
+        }
+    }
 })()
