@@ -6,7 +6,7 @@
     {
         let currentLink = listOfLinks[i].querySelector("a").getAttribute("href")
         console.info(currentLink)
-        if(currentLink === filename){
+        if(currentLink == filename){
             listOfLinks[i].setAttribute("class", "currentPage")
             break
         }
