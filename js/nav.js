@@ -1,0 +1,6 @@
+(function(){
+    console.dir(window)
+
+
+
+})()

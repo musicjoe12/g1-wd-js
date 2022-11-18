@@ -40,5 +40,18 @@ function chgColour(ev){
     document.querySelector("body").setAttribute("class", newBgColour)
 }
 
-//end
+let imageAr = ['images/view1.jpg', 'images/view2.jpg', 'images/view3.jpg', 
+'images/view4.jpg', 'images/view5.jpg', 'images/view6.jpg'];
+let count = 0
+
+setInterval(changeImage, 1000)
+
+function changeImage()
+{
+    count++
+    if(count == imageAr.length){
+        count = 0
+    }
+    document.getElementById('myImages').setAttribute('src', imageAr[count]);
+}//end
 })()
